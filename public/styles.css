@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: azure;
+    color: black;
+
+}
+.content{
+    background-color: rgb(88, 182, 88);
+    height: 100vh;
+}
