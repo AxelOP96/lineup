@@ -13,3 +13,10 @@
     background-color: rgb(88, 182, 88);
     height: 100vh;
 }
+.titulo{
+    text-align: center;
+    color: blue;
+}
+.titulo .boca {
+    color: rgb(208, 205, 47); /* Establece el color para "BOCA" */
+  }
