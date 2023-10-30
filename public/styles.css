@@ -20,3 +20,14 @@
 .titulo .boca {
     color: rgb(208, 205, 47); /* Establece el color para "BOCA" */
   }
+  .delantera{
+    display: flex;
+    justify-content: space-around;
+  }
+.de{
+    background-color: #0c600f;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 50px;
+  }
