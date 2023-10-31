@@ -22,12 +22,25 @@
   }
   .delantera{
     display: flex;
+    justify-content: center;
+  }
+  .medio{
+    display: flex;
+    justify-content: space-between;
+  }
+  .defensa{
+    display: flex;
     justify-content: space-around;
   }
 .de{
-    background-color: #0c600f;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 20px 50px;
+  background-color: #0c600f;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 60px 80px;
+  }
+  .foot{
+    background-color: rgb(71, 42, 235);
+    height: 10vh;
+    color: beige;
   }
