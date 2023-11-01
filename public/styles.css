@@ -5,42 +5,52 @@
 }
 
 .header{
-    background-color: azure;
+    background-color: rgb(126, 128, 248);
     color: black;
 
 }
 .content{
     background-color: rgb(88, 182, 88);
-    height: 100vh;
+    height: 82vh;
 }
 .titulo{
     text-align: center;
     color: blue;
 }
-.titulo .boca {
-    color: rgb(208, 205, 47); /* Establece el color para "BOCA" */
+.titulo .boca, .centrado .boca {
+    color: rgb(244, 240, 50); /* Establece el color para "BOCA" */
   }
   .delantera{
     display: flex;
     justify-content: center;
+    column-gap: 50px;
   }
   .medio{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    column-gap: 50px
   }
   .defensa{
     display: flex;
     justify-content: space-around;
+    column-gap: 30px;
+  }
+  .arquero{
+    display: flex;
+    justify-content: center;
   }
 .de{
   background-color: #0c600f;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin: 60px 80px;
+  margin: 40px 40px;
   }
   .foot{
-    background-color: rgb(71, 42, 235);
+    background-color:rgb(126, 128, 248);
     height: 10vh;
     color: beige;
+  }
+  .centrado{
+    text-align: center;
   }
