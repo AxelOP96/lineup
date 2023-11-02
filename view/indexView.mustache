@@ -1,164 +1,184 @@
 
 <main class="content">
     <div class="campo">
-        {{#jugador}}
+        
         <div class="delantera">
             <div class="d1 de"></div>
             <div class="d2 de"></div>
             
-            <span>{{nombre}} {{apellido}}
-    
-            </span>
+            <span>{{nombre}}</span>
         </div>
         <div class="medio">
             <div class="d1 de"></div>
             <div class="d2 de"></div>
             <div class="d3 de"></div>
             <div class="d4 de"></div>
-            <span>{{nombre}} {{apellido}}</span>
+            <span>{{nombre}}</span>
         </div>
+        {{#defensor}}
         <div class="defensa">
             <div class="d1 de"></div>
+            <span>{{nombre}}</span>
             <div class="d2 de"></div>
+            <span>{{nombre}}</span>
             <div class="d3 de"></div>
+            <span>{{nombre}}</span>
             <div class="d4 de"></div>
-            <span>{{nombre}} {{apellido}}</span>
+            <span>{{nombre}}</span>
+            
         </div>
+        {{/defensor}}
+        {{#arquero}}
         <div class="arquero">
             <div class="d1 de"></div>
-            <span>{{nombre}} {{apellido}}</span>
+            <span>{{nombre}}</span>
         </div>
-        {{/jugador}}
+        {{/arquero}}
     </div>
    
 
     <section class="parallel">
         <form action="./index.php?controller=Inicio&method=procesarFormulario" method="post" class="formulario">
             <select name="jugador11" id="jugador11">
-                <option value="">Ezequiel Zeballos</option>
-                <option value="">Dario Benedetto</option>
-                <option value="">Edinson Cavani</option>
-                <option value="">Lucas Janson</option>
-                <option value="">Miguel Merentiel</option>
-                <option value="">Luca Langoni</option>
-                <option value="">Norberto Briasco</option>
+                <option value="" disabled selected>DE</option>
+                <option value="Ezequiel Zeballos">Ezequiel Zeballos</option>
+                <option value="Dario Benedetto">Dario Benedetto</option>
+                <option value="Edinson Cavani">Edinson Cavani</option>
+                <option value="Lucas Janson">Lucas Janson</option>
+                <option value="Miguel Merentiel">Miguel Merentiel</option>
+                <option value="Luca Langoni">Luca Langoni</option>
+                <option value="Norberto Briasco">Norberto Briasco</option>
             </select>
             <select name="jugador10" id="jugador10">
-                <option value="">Ezequiel Zeballos</option>
-                <option value="">Dario Benedetto</option>
-                <option value="">Edinson Cavani</option>
-                <option value="">Lucas Janson</option>
-                <option value="">Miguel Merentiel</option>
-                <option value="">Luca Langoni</option>
-                <option value="">Norberto Briasco</option>
+                <option value="" disabled selected>DE</option>
+                <option value="Ezequiel Zeballos">Ezequiel Zeballos</option>
+                <option value="Dario Benedetto">Dario Benedetto</option>
+                <option value="Edinson Cavani">Edinson Cavani</option>
+                <option value="Lucas Janson">Lucas Janson</option>
+                <option value="Miguel Merentiel">Miguel Merentiel</option>
+                <option value="Luca Langoni">Luca Langoni</option>
+                <option value="Norberto Briasco">Norberto Briasco</option>
             </select>
             <select name="jugador9" id="jugador9">
-                <option value="">Ezequiel Bullaude</option>
-                <option value="">Guillermo Fernandez</option>
-                <option value="">Valentin Barco</option>
-                <option value="">Juan Ramirez</option>
-                <option value="">Ezequiel Fernandez</option>
-                <option value="">Diego Gonzalez</option>
-                <option value="">Cristian Medina</option>
-                <option value="">Vicente Taborda</option>
-                <option value="">Jorman Campuzano</option>
+                <option value="" disabled selected>MC</option>
+                <option value="Ezequiel Bullaude">Ezequiel Bullaude</option>
+                <option value="Guillermo Fernandez">Guillermo Fernandez</option>
+                <option value="Valentin Barco">Valentin Barco</option>
+                <option value="Juan Ramirez">Juan Ramirez</option>
+                <option value="Ezequiel Fernandez">Ezequiel Fernandez</option>
+                <option value="Diego Gonzalez">Diego Gonzalez</option>
+                <option value="Cristian Medina">Cristian Medina</option>
+                <option value="Vicente Taborda">Vicente Taborda</option>
+                <option value="Jorman Campuzano">Jorman Campuzano</option>
             </select>
             <select name="jugador8" id="jugador8">
-                <option value="">Ezequiel Bullaude</option>
-                <option value="">Guillermo Fernandez</option>
-                <option value="">Valentin Barco</option>
-                <option value="">Juan Ramirez</option>
-                <option value="">Ezequiel Fernandez</option>
-                <option value="">Diego Gonzalez</option>
-                <option value="">Cristian Medina</option>
-                <option value="">Vicente Taborda</option>
-                <option value="">Jorman Campuzano</option>
+                <option value="" disabled selected>MC</option>
+                <option value="Ezequiel Bullaude">Ezequiel Bullaude</option>
+                <option value="Guillermo Fernandez">Guillermo Fernandez</option>
+                <option value="Valentin Barco">Valentin Barco</option>
+                <option value="Juan Ramirez">Juan Ramirez</option>
+                <option value="Ezequiel Fernandez">Ezequiel Fernandez</option>
+                <option value="Diego Gonzalez">Diego Gonzalez</option>
+                <option value="Cristian Medina">Cristian Medina</option>
+                <option value="Vicente Taborda">Vicente Taborda</option>
+                <option value="Jorman Campuzano">Jorman Campuzano</option>
             </select>
             <select name="jugador7" id="jugador7">
-                <option value="">Ezequiel Bullaude</option>
-                <option value="">Guillermo Fernandez</option>
-                <option value="">Valentin Barco</option>
-                <option value="">Juan Ramirez</option>
-                <option value="">Ezequiel Fernandez</option>
-                <option value="">Diego Gonzalez</option>
-                <option value="">Cristian Medina</option>
-                <option value="">Vicente Taborda</option>
-                <option value="">Jorman Campuzano</option>
+                <option value="" disabled selected>MC</option>
+                <option value="Ezequiel Bullaude">Ezequiel Bullaude</option>
+                <option value="Guillermo Fernandez">Guillermo Fernandez</option>
+                <option value="Valentin Barco">Valentin Barco</option>
+                <option value="Juan Ramirez">Juan Ramirez</option>
+                <option value="Ezequiel Fernandez">Ezequiel Fernandez</option>
+                <option value="Diego Gonzalez">Diego Gonzalez</option>
+                <option value="Cristian Medina">Cristian Medina</option>
+                <option value="Vicente Taborda">Vicente Taborda</option>
+                <option value="Jorman Campuzano">Jorman Campuzano</option>
             </select>
             <select name="jugador6" id="jugador6">
-                <option value="">Ezequiel Bullaude</option>
-                <option value="">Guillermo Fernandez</option>
-                <option value="">Valentin Barco</option>
-                <option value="">Juan Ramirez</option>
-                <option value="">Ezequiel Fernandez</option>
-                <option value="">Diego Gonzalez</option>
-                <option value="">Cristian Medina</option>
-                <option value="">Vicente Taborda</option>
-                <option value="">Jorman Campuzano</option>
+                <option value="" disabled selected>MC</option>
+                <option value="Ezequiel Bullaude">Ezequiel Bullaude</option>
+                <option value="Guillermo Fernandez">Guillermo Fernandez</option>
+                <option value="Valentin Barco">Valentin Barco</option>
+                <option value="Juan Ramirez">Juan Ramirez</option>
+                <option value="Ezequiel Fernandez">Ezequiel Fernandez</option>
+                <option value="Diego Gonzalez">Diego Gonzalez</option>
+                <option value="Cristian Medina">Cristian Medina</option>
+                <option value="Vicente Taborda">Vicente Taborda</option>
+                <option value="Jorman Campuzano">Jorman Campuzano</option>
             </select>
             <select name="jugador5" id="jugador5">
-                <option value="">Facundo Roncaglia</option>
-                <option value="">Marcelo Saracchi</option>
-                <option value="">Nicolas Figal</option>
-                <option value="">Marcos Rojo</option>
-                <option value="">Nicolas Valentini</option>
-                <option value="">Luis Advincula</option>
-                <option value="">Frank Fabra</option>
-                <option value="">Bruno Valdez</option>
-                <option value="">Nahuel Genez</option>
-                <option value="">Lautaro Di Lollo</option>
-                <option value="">Lucas Blondel</option>
-                <option value="">Marcelo Weigandt</option>
+                <option value="" disabled selected>DF</option>
+                <option value="Facundo Roncaglia">Facundo Roncaglia</option>
+                <option value="Marcelo Saracchi">Marcelo Saracchi</option>
+                <option value="Nicolas Figal">Nicolas Figal</option>
+                <option value="Marcos Rojo">Marcos Rojo</option>
+                <option value="Nicolas Valentini">Nicolas Valentini</option>
+                <option value="Luis Advincula">Luis Advincula</option>
+                <option value="Frank Fabra">Frank Fabra</option>
+                <option value="Bruno Valdez">Bruno Valdez</option>
+                <option value="Nahuel Genez">Nahuel Genez</option>
+                <option value="Aaron Anselmino">Aaron Anselmino</option>
+                <option value="Lautaro Di Lollo">Lautaro Di Lollo</option>
+                <option value="Lucas Blondel">Lucas Blondel</option>
+                <option value="Marcelo Weigandt">Marcelo Weigandt</option>
             </select>
             <select name="jugador4" id="jugador4">
-                <option value="">Facundo Roncaglia</option>
-                <option value="">Marcelo Saracchi</option>
-                <option value="">Nicolas Figal</option>
-                <option value="">Marcos Rojo</option>
-                <option value="">Nicolas Valentini</option>
-                <option value="">Luis Advincula</option>
-                <option value="">Frank Fabra</option>
-                <option value="">Bruno Valdez</option>
-                <option value="">Nahuel Genez</option>
-                <option value="">Lautaro Di Lollo</option>
-                <option value="">Lucas Blondel</option>
-                <option value="">Marcelo Weigandt</option>
+                <option value="" disabled selected>DF</option>
+                <option value="Facundo Roncaglia">Facundo Roncaglia</option>
+                <option value="Marcelo Saracchi">Marcelo Saracchi</option>
+                <option value="Nicolas Figal">Nicolas Figal</option>
+                <option value="Marcos Rojo">Marcos Rojo</option>
+                <option value="Nicolas Valentini">Nicolas Valentini</option>
+                <option value="Luis Advincula">Luis Advincula</option>
+                <option value="Frank Fabra">Frank Fabra</option>
+                <option value="Bruno Valdez">Bruno Valdez</option>
+                <option value="Nahuel Genez">Nahuel Genez</option>
+                <option value="Aaron Anselmino">Aaron Anselmino</option>
+                <option value="Lautaro Di Lollo">Lautaro Di Lollo</option>
+                <option value="Lucas Blondel">Lucas Blondel</option>
+                <option value="Marcelo Weigandt">Marcelo Weigandt</option>
             </select>
             <select name="jugador3" id="jugador3">
-                <option value="">Facundo Roncaglia</option>
-                <option value="">Marcelo Saracchi</option>
-                <option value="">Nicolas Figal</option>
-                <option value="">Marcos Rojo</option>
-                <option value="">Nicolas Valentini</option>
-                <option value="">Luis Advincula</option>
-                <option value="">Frank Fabra</option>
-                <option value="">Bruno Valdez</option>
-                <option value="">Nahuel Genez</option>
-                <option value="">Lautaro Di Lollo</option>
-                <option value="">Lucas Blondel</option>
-                <option value="">Marcelo Weigandt</option>
+                <option value="" disabled selected>DF</option>
+                <option value="Facundo Roncaglia">Facundo Roncaglia</option>
+                <option value="Marcelo Saracchi">Marcelo Saracchi</option>
+                <option value="Nicolas Figal">Nicolas Figal</option>
+                <option value="Marcos Rojo">Marcos Rojo</option>
+                <option value="Nicolas Valentini">Nicolas Valentini</option>
+                <option value="Luis Advincula">Luis Advincula</option>
+                <option value="Frank Fabra">Frank Fabra</option>
+                <option value="Bruno Valdez">Bruno Valdez</option>
+                <option value="Nahuel Genez">Nahuel Genez</option>
+                <option value="Aaron Anselmino">Aaron Anselmino</option>
+                <option value="Lautaro Di Lollo">Lautaro Di Lollo</option>
+                <option value="Lucas Blondel">Lucas Blondel</option>
+                <option value="Marcelo Weigandt">Marcelo Weigandt</option>
             </select>
             <select name="jugador2" id="jugador2">
-                <option value="">Facundo Roncaglia</option>
-                <option value="">Marcelo Saracchi</option>
-                <option value="">Nicolas Figal</option>
-                <option value="">Marcos Rojo</option>
-                <option value="">Nicolas Valentini</option>
-                <option value="">Luis Advincula</option>
-                <option value="">Frank Fabra</option>
-                <option value="">Bruno Valdez</option>
-                <option value="">Nahuel Genez</option>
-                <option value="">Lautaro Di Lollo</option>
-                <option value="">Lucas Blondel</option>
-                <option value="">Marcelo Weigandt</option>
+                <option value="" disabled selected>DF</option>
+                <option value="Facundo Roncaglia">Facundo Roncaglia</option>
+                <option value="Marcelo Saracchi">Marcelo Saracchi</option>
+                <option value="Nicolas Figal">Nicolas Figal</option>
+                <option value="Marcos Rojo">Marcos Rojo</option>
+                <option value="Nicolas Valentini">Nicolas Valentini</option>
+                <option value="Luis Advincula">Luis Advincula</option>
+                <option value="Frank Fabra">Frank Fabra</option>
+                <option value="Bruno Valdez">Bruno Valdez</option>
+                <option value="Nahuel Genez">Nahuel Genez</option>
+                <option value="Aaron Anselmino">Aaron Anselmino</option>
+                <option value="Lautaro Di Lollo">Lautaro Di Lollo</option>
+                <option value="Lucas Blondel">Lucas Blondel</option>
+                <option value="Marcelo Weigandt">Marcelo Weigandt</option>
             </select>
             <select name="jugador1" id="jugador1">
-                <option value="">Sergio Romero</option>
-                <option value="">Javi Garcia</option>
-                <option value="">Leandro Brey</option>
+                <option value="" disabled selected>ARQ</option>
+                <option value="Sergio Romero">Sergio Romero</option>
+                <option value="Javi Garcia">Javi Garcia</option>
+                <option value="Leandro Brey">Leandro Brey</option>
                
             </select>
-            <input type="submit" value="CONFIRMAR EQUIPO">
+            <input type="submit" name="enviar" value="CONFIRMAR EQUIPO">
         </form>
         
     </section>

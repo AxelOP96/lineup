@@ -7,7 +7,7 @@ $configuracion = new Configuracion();
 $router = $configuracion->getRouter();
 
 
-$controller = $_GET['controller'] ?? "Animalia";
+$controller = $_GET['controller'] ?? "Inicio";
 $method = $_GET['method'] ?? 'mostrarPantallaInicial';
 
 $router->route($controller,$method);

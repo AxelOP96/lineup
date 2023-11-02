@@ -24,26 +24,31 @@ class InicioController
             $jugador10 = $_POST["jugador10"];
             $jugador11 = $_POST["jugador11"];
         
-            $jugadores = array();
-
-            for ($i = 1; $i <= 11; $i++) {
-            $jugador = "jugador" . $i;
-            if (isset($_POST['$jugador'])) {
-                $jugadores[] = $_POST['$jugador'];
-            }
-        }
-        var_dump($jugador);
-        $datos['jugadores'] = $jugadores;
-        var_dump($datos['jugadores']);
+           // $jugadores = array();
+            $datos['arquero'] =  $this->model->getArquero($jugador1);
+            $datos['defensor'] =  $this->model->getDefensores($jugador2);
+            $datos['defensor'] =  $this->model->getDefensores($jugador3);
+            $datos['defensor'] =  $this->model->getDefensores($jugador4);
+            $datos['defensor'] =  $this->model->getDefensores($jugador5);
+        //     for ($i = 1; $i <= 11; $i++) {
+        //     $jugador = "jugador" . $i;
+        //     if (isset($_POST['$jugador'])) {
+        //         $jugadores[] = $_POST['$jugador'];
+        //     }
+        // }
+        //var_dump($jugador);
+       // $datos['jugadores'] = $jugadores;
+        var_dump($datos['arquero']);
     }
        
-        return $datos;
+        $this->render->printView('index', $datos);
         }
         
 
     public function mostrarPantallaInicial()
     {
-        $datos['jugadores'] =  $this->procesarFormulario();//$this->model->getDelanteros();
+        $datos = null;
+        //$datos['jugadores'] =  $this->procesarFormulario();//$this->model->getDelanteros();
         $this->render->printView('index', $datos);
     }
 }
