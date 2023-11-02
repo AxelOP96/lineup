@@ -1,11 +1,12 @@
 
 <main class="content">
     <div class="campo">
+        {{#jugador}}
         <div class="delantera">
             <div class="d1 de"></div>
             <div class="d2 de"></div>
             
-            <span>{{apellido}}
+            <span>{{nombre}} {{apellido}}
     
             </span>
         </div>
@@ -14,24 +15,26 @@
             <div class="d2 de"></div>
             <div class="d3 de"></div>
             <div class="d4 de"></div>
-            <span>{{apellido}}</span>
+            <span>{{nombre}} {{apellido}}</span>
         </div>
         <div class="defensa">
             <div class="d1 de"></div>
             <div class="d2 de"></div>
             <div class="d3 de"></div>
             <div class="d4 de"></div>
-            <span>{{apellido}}</span>
+            <span>{{nombre}} {{apellido}}</span>
         </div>
         <div class="arquero">
             <div class="d1 de"></div>
+            <span>{{nombre}} {{apellido}}</span>
         </div>
+        {{/jugador}}
     </div>
    
 
     <section class="parallel">
-        <form action="" method="post" class="formulario">
-            <select name="" id="">
+        <form action="./index.php?controller=Inicio&method=procesarFormulario" method="post" class="formulario">
+            <select name="jugador11" id="jugador11">
                 <option value="">Ezequiel Zeballos</option>
                 <option value="">Dario Benedetto</option>
                 <option value="">Edinson Cavani</option>
@@ -40,7 +43,7 @@
                 <option value="">Luca Langoni</option>
                 <option value="">Norberto Briasco</option>
             </select>
-            <select name="" id="">
+            <select name="jugador10" id="jugador10">
                 <option value="">Ezequiel Zeballos</option>
                 <option value="">Dario Benedetto</option>
                 <option value="">Edinson Cavani</option>
@@ -49,7 +52,7 @@
                 <option value="">Luca Langoni</option>
                 <option value="">Norberto Briasco</option>
             </select>
-            <select name="" id="">
+            <select name="jugador9" id="jugador9">
                 <option value="">Ezequiel Bullaude</option>
                 <option value="">Guillermo Fernandez</option>
                 <option value="">Valentin Barco</option>
@@ -60,7 +63,7 @@
                 <option value="">Vicente Taborda</option>
                 <option value="">Jorman Campuzano</option>
             </select>
-            <select name="" id="">
+            <select name="jugador8" id="jugador8">
                 <option value="">Ezequiel Bullaude</option>
                 <option value="">Guillermo Fernandez</option>
                 <option value="">Valentin Barco</option>
@@ -71,7 +74,7 @@
                 <option value="">Vicente Taborda</option>
                 <option value="">Jorman Campuzano</option>
             </select>
-            <select name="" id="">
+            <select name="jugador7" id="jugador7">
                 <option value="">Ezequiel Bullaude</option>
                 <option value="">Guillermo Fernandez</option>
                 <option value="">Valentin Barco</option>
@@ -82,7 +85,7 @@
                 <option value="">Vicente Taborda</option>
                 <option value="">Jorman Campuzano</option>
             </select>
-            <select name="" id="">
+            <select name="jugador6" id="jugador6">
                 <option value="">Ezequiel Bullaude</option>
                 <option value="">Guillermo Fernandez</option>
                 <option value="">Valentin Barco</option>
@@ -93,7 +96,7 @@
                 <option value="">Vicente Taborda</option>
                 <option value="">Jorman Campuzano</option>
             </select>
-            <select name="" id="">
+            <select name="jugador5" id="jugador5">
                 <option value="">Facundo Roncaglia</option>
                 <option value="">Marcelo Saracchi</option>
                 <option value="">Nicolas Figal</option>
@@ -107,7 +110,7 @@
                 <option value="">Lucas Blondel</option>
                 <option value="">Marcelo Weigandt</option>
             </select>
-            <select name="" id="">
+            <select name="jugador4" id="jugador4">
                 <option value="">Facundo Roncaglia</option>
                 <option value="">Marcelo Saracchi</option>
                 <option value="">Nicolas Figal</option>
@@ -121,7 +124,7 @@
                 <option value="">Lucas Blondel</option>
                 <option value="">Marcelo Weigandt</option>
             </select>
-            <select name="" id="">
+            <select name="jugador3" id="jugador3">
                 <option value="">Facundo Roncaglia</option>
                 <option value="">Marcelo Saracchi</option>
                 <option value="">Nicolas Figal</option>
@@ -135,7 +138,7 @@
                 <option value="">Lucas Blondel</option>
                 <option value="">Marcelo Weigandt</option>
             </select>
-            <select name="" id="">
+            <select name="jugador2" id="jugador2">
                 <option value="">Facundo Roncaglia</option>
                 <option value="">Marcelo Saracchi</option>
                 <option value="">Nicolas Figal</option>
@@ -149,7 +152,7 @@
                 <option value="">Lucas Blondel</option>
                 <option value="">Marcelo Weigandt</option>
             </select>
-            <select name="" id="">
+            <select name="jugador1" id="jugador1">
                 <option value="">Sergio Romero</option>
                 <option value="">Javi Garcia</option>
                 <option value="">Leandro Brey</option>
