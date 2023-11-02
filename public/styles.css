@@ -11,6 +11,8 @@
 }
 .content{
     background-color: rgb(88, 182, 88);
+    display: flex;
+    flex-direction: column;
     height: 82vh;
 }
 .titulo{
@@ -33,7 +35,7 @@
   .defensa{
     display: flex;
     justify-content: space-around;
-    column-gap: 30px;
+    column-gap: 50px;
   }
   .arquero{
     display: flex;
@@ -41,10 +43,10 @@
   }
 .de{
   background-color: #0c600f;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin: 40px 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 50px 78px;
   }
   .foot{
     background-color:rgb(126, 128, 248);
@@ -53,4 +55,12 @@
   }
   .centrado{
     text-align: center;
+  }
+  .campo{
+    width: 70%;
+  }
+  .parallel{
+    display: inline;
+    width: 30%;
+    background-color: blue;
   }
