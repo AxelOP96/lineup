@@ -10,9 +10,9 @@ create database plantel;
     dorsal INT(25) NOT NULL
 );
 
-INSERT INTO jugador(nombre, apellido, posicion, dorsal) VALUES("Sergio", "Romero", "ARQ", 1), ("Facundo", "Roncaglia", "DFC", 2), ("Marcelo", "Saracchi", "DFI", 3), ("Nicolas", "Figal", "DFC", 4), ("Ezequiel", "Bullaude", "VC", 5),
-("Marcos", "Rojo", "DFC", 6), ("Ezequiel", "Zeballos", "DE", 7), ("Guillermo", "Fernandez", "VD", 8),("Dario", "Benedetto", "DE", 9), ("Edinson", "Cavani", "DE", 10), ("Lucas", "Janson", "DE", 11);
+INSERT INTO jugador(nombre, apellido, posicion, dorsal) VALUES("Sergio", "Romero", "ARQ", 1), ("Facundo", "Roncaglia", "DF", 2), ("Marcelo", "Saracchi", "DF", 3), ("Nicolas", "Figal", "DF", 4), ("Ezequiel", "Bullaude", "MC", 5),
+("Marcos", "Rojo", "DF", 6), ("Ezequiel", "Zeballos", "DE", 7), ("Guillermo", "Fernandez", "MC", 8),("Dario", "Benedetto", "DE", 9), ("Edinson", "Cavani", "DE", 10), ("Lucas", "Janson", "DE", 11);
 INSERT INTO jugador(nombre, apellido, posicion, dorsal) VALUES("Leandro", "Brey", "ARQ", 12), ("Javier", "Garcia", "ARQ", 13), ("Nicolas", "Valentini", "DFC", 15), ("Miguel", "Merentiel", "DE", 16), ("Luis", "Advincula", "DFD", 17),
-("Frank", "Fabra", "DFI", 18), ("Valentin", "Barco", "DFI", 19), ("Juan", "Ramirez", "VD", 20),("Ezequiel", "Fernandez", "VC", 21), ("Diego", "Gonzalez", "VI", 23), ("Bruno", "Valdez", "DFC", 25);
+("Frank", "Fabra", "DF", 18), ("Valentin", "Barco", "MC", 19), ("Juan", "Ramirez", "MC", 20),("Ezequiel", "Fernandez", "MC", 21), ("Diego", "Gonzalez", "MC", 23), ("Bruno", "Valdez", "DF", 25);
 INSERT INTO jugador(nombre, apellido, posicion, dorsal) VALUES("Norberto", "Briasco", "DE", 29), ("Nahuel", "Genez", "DFI", 35), ("Cristian", "Medina", "VC", 36), ("Aaron", "Anselmino", "DFC", 38), ("Vicente", "Taborda", "VC", 39),
-("Lautaro", "Di Lollo", "DFC", 40), ("Luca", "Langoni", "DE", 41), ("Lucas", "Blondel", "DFD", 42),("Jorman", "Campuzano", "VD", 49), ("Marcelo", "Weigandt", "DFD", 57);
+("Lautaro", "Di Lollo", "DF", 40), ("Luca", "Langoni", "DE", 41), ("Lucas", "Blondel", "DF", 42),("Jorman", "Campuzano", "MC", 49), ("Marcelo", "Weigandt", "DF", 57);
