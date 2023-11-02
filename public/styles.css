@@ -12,7 +12,7 @@
 .content{
     background-color: rgb(88, 182, 88);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 82vh;
 }
 .titulo{
@@ -57,6 +57,7 @@
     text-align: center;
   }
   .campo{
+    display: inline;
     width: 70%;
   }
   .parallel{
@@ -64,3 +65,26 @@
     width: 30%;
     background-color: blue;
   }
+.formulario{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px 10px;
+}
+.formulario select{
+  margin: 10px 0;
+  padding: 5px;
+  width: 200px;
+  outline: none;
+  background-color: yellow;
+}
+.formulario input{
+  width: 200px;
+  background-color: rgb(136, 248, 248);
+  color: blue;
+  border: none;
+}
+.formulario input:hover{
+  background-color: rgb(243, 243, 67);
+  color: blue;
+}
