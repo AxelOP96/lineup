@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -119,4 +119,8 @@
 .circulo2{
   width: 60px;
   height: 60px;  
+}
+span{
+  color: #fff;
+  font-family: 'Lato', sans-serif;
 }

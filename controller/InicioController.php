@@ -24,7 +24,6 @@ class InicioController
             $jugador10 = $_POST["jugador10"];
             $jugador11 = $_POST["jugador11"];
         
-           // $jugadores = array();
             $datos['arquero'] =  $this->model->getArquero($jugador1);
             $datos['defensor1'] =  $this->model->getDefensores($jugador2);
             $datos['defensor2'] =  $this->model->getDefensores($jugador3);
@@ -38,16 +37,6 @@ class InicioController
 
             $datos['delantero1'] = $this->model->getDelanteros($jugador10);
             $datos['delantero2'] = $this->model->getDelanteros($jugador11);
-        //     for ($i = 1; $i <= 11; $i++) {
-        //     $jugador = "jugador" . $i;
-        //     if (isset($_POST['$jugador'])) {
-        //         $jugadores[] = $_POST['$jugador'];
-        //     }
-        // }
-        //var_dump($jugador);
-       // $datos['jugadores'] = $jugadores;
-        //var_dump($datos['arquero']);
-        //var_dump($datos['defensor']);
     }
         $this->render->printView('index', $datos);
         }
@@ -56,7 +45,6 @@ class InicioController
     public function mostrarPantallaInicial()
     {
         $datos = null;
-        //$datos['jugadores'] =  $this->procesarFormulario();//$this->model->getDelanteros();
         $this->render->printView('index', $datos);
     }
 }
