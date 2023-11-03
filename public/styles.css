@@ -25,17 +25,17 @@
   .delantera{
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 10px;
   }
   .medio{
     display: flex;
     justify-content: space-evenly;
-    column-gap: 50px
+    column-gap: 4px
   }
   .defensa{
     display: flex;
     justify-content: space-around;
-    column-gap: 8px;
+    column-gap: 4px;
   }
   .arquero{
     display: flex;
@@ -51,7 +51,7 @@
     width: max-content;
     position: relative;
     top: -30px;
-    left: 57px;
+    left: 35px;
   }
   .defensor{
     display: inline-block;
@@ -60,12 +60,19 @@
     top: 120px;
     left: -139px
   }
+  .ataque{
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    top: 120px;
+    left: -150px;
+  }
 .de{
   background-color: #0c600f;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin: 50px 78px;
+    margin: 50px 50px;
   }
   .foot{
     background-color:rgb(126, 128, 248);
@@ -107,4 +114,9 @@
 .formulario input:hover{
   background-color: rgb(114, 128, 237);
   color: rgb(219, 244, 27);
+}
+
+.circulo2{
+  width: 60px;
+  height: 60px;  
 }

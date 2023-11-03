@@ -3,40 +3,55 @@
     <div class="campo">
         
         <div class="delantera">
-            <div class="d1 de"></div>
-            <div class="d2 de"></div>
-            
-            <span>{{nombre}}</span>
+            {{#delantero1}}
+            <div class="circulo1 de"></div>
+            <span class="ataque">{{nombre}}</span>
+            {{/delantero1}}
+            {{#delantero2}}
+            <div class="circulo1 de"></div>
+            <span class="ataque">{{nombre}}</span>
+            {{/delantero2}}
         </div>
         <div class="medio">
-            <div class="d1 de"></div>
-            <div class="d2 de"></div>
-            <div class="d3 de"></div>
-            <div class="d4 de"></div>
-            <span>{{nombre}}</span>
+            {{#centro1}}
+            <div class="circulo2 de"></div>
+            <span  class="defensor">{{nombre}}</span>
+            {{/centro1}}
+            {{#centro2}}
+            <div class="circulo2 de"></div>
+            <span class="defensor">{{nombre}}</span>
+            {{/centro2}}
+            {{#centro3}}
+            <div class="circulo2 de"></div>
+            <span class="defensor">{{nombre}}</span>
+            {{/centro3}}
+            {{#centro4}}
+            <div class="circulo2 de"></div>
+            <span class="defensor">{{nombre}}</span>
+            {{/centro4}}
         </div>
         
         <div class="defensa">
             {{#defensor1}}
-            <div class="d1 de"></div>
+            <div class="circulo3 de"></div>
             <span class="defensor">{{nombre}}</span>
             {{/defensor1}}
             {{#defensor2}}
-            <div class="d2 de"></div>
+            <div class="circulo3 de"></div>
             <span class="defensor">{{nombre}}</span>
             {{/defensor2}}
             {{#defensor3}}
-            <div class="d3 de"></div>
+            <div class="circulo3 de"></div>
             <span class="defensor">{{nombre}}</span>
             {{/defensor3}}
             {{#defensor4}}
-            <div class="d4 de"></div>
+            <div class="circulo3 de"></div>
             <span class="defensor">{{nombre}}</span>
             {{/defensor4}}
         </div>
         {{#arquero}}
         <div class="arquero">
-            <div class="d1 de"></div>
+            <div class="circulo4 de"></div>
             <span class="jugador">{{nombre}}</span>
         </div>
         {{/arquero}}
