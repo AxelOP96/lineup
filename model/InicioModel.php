@@ -11,20 +11,20 @@ class InicioModel {
         return $this->database;
     }
 
-    public function getDelanteros($nombre, $posicion){
-        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%' and posicion LIKE '%$posicion%'";
+    public function getDelanteros($nombre){
+        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%'";
         return $this->database->query( $query );
     }
-    public function getMediocampistas($nombre, $posicion){
-        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%' and posicion LIKE '%$posicion%'";
+    public function getMediocampistas($nombre){
+        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%'";
         return $this->database->query( $query );
     }
-    public function getDefensores($nombre, $posicion){
-        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%' and posicion LIKE '%$posicion%'";
+    public function getDefensores($nombre){
+        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%'";
         return $this->database->query( $query );
     }
-    public function getArquero($nombre, $posicion){
-        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%' and posicion LIKE '%$posicion%'";
+    public function getArquero($nombre){
+        $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%'";
         return $this->database->query( $query );
     }
 }

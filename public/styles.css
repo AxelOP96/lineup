@@ -35,11 +35,30 @@
   .defensa{
     display: flex;
     justify-content: space-around;
-    column-gap: 50px;
+    column-gap: 8px;
   }
   .arquero{
     display: flex;
+    width: 24%;
+    margin: auto;
+    /* text-align: center; */
+    flex-direction: column;
     justify-content: center;
+  }
+
+  .jugador{
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    top: -30px;
+    left: 57px;
+  }
+  .defensor{
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    top: 120px;
+    left: -139px
   }
 .de{
   background-color: #0c600f;
@@ -83,8 +102,9 @@
   background-color: rgb(136, 248, 248);
   color: blue;
   border: none;
+  padding: 5px;
 }
 .formulario input:hover{
-  background-color: rgb(243, 243, 67);
-  color: blue;
+  background-color: rgb(114, 128, 237);
+  color: rgb(219, 244, 27);
 }

@@ -15,23 +15,29 @@
             <div class="d4 de"></div>
             <span>{{nombre}}</span>
         </div>
-        {{#defensor}}
+        
         <div class="defensa">
+            {{#defensor1}}
             <div class="d1 de"></div>
-            <span>{{nombre}}</span>
+            <span class="defensor">{{nombre}}</span>
+            {{/defensor1}}
+            {{#defensor2}}
             <div class="d2 de"></div>
-            <span>{{nombre}}</span>
+            <span class="defensor">{{nombre}}</span>
+            {{/defensor2}}
+            {{#defensor3}}
             <div class="d3 de"></div>
-            <span>{{nombre}}</span>
+            <span class="defensor">{{nombre}}</span>
+            {{/defensor3}}
+            {{#defensor4}}
             <div class="d4 de"></div>
-            <span>{{nombre}}</span>
-            
+            <span class="defensor">{{nombre}}</span>
+            {{/defensor4}}
         </div>
-        {{/defensor}}
         {{#arquero}}
         <div class="arquero">
             <div class="d1 de"></div>
-            <span>{{nombre}}</span>
+            <span class="jugador">{{nombre}}</span>
         </div>
         {{/arquero}}
     </div>
@@ -176,7 +182,6 @@
                 <option value="Sergio Romero">Sergio Romero</option>
                 <option value="Javi Garcia">Javi Garcia</option>
                 <option value="Leandro Brey">Leandro Brey</option>
-               
             </select>
             <input type="submit" name="enviar" value="CONFIRMAR EQUIPO">
         </form>

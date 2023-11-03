@@ -26,10 +26,18 @@ class InicioController
         
            // $jugadores = array();
             $datos['arquero'] =  $this->model->getArquero($jugador1);
-            $datos['defensor'] =  $this->model->getDefensores($jugador2);
-            $datos['defensor'] =  $this->model->getDefensores($jugador3);
-            $datos['defensor'] =  $this->model->getDefensores($jugador4);
-            $datos['defensor'] =  $this->model->getDefensores($jugador5);
+            $datos['defensor1'] =  $this->model->getDefensores($jugador2);
+            $datos['defensor2'] =  $this->model->getDefensores($jugador3);
+            $datos['defensor3'] =  $this->model->getDefensores($jugador4);
+            $datos['defensor4'] =  $this->model->getDefensores($jugador5);
+
+            $datos['centro1'] = $this->model->getMediocampistas($jugador6);
+            $datos['centro2'] = $this->model->getMediocampistas($jugador7);
+            $datos['centro3'] = $this->model->getMediocampistas($jugador8);
+            $datos['centro4'] = $this->model->getMediocampistas($jugador9);
+
+            $datos['delantero1'] = $this->model->getDelanteros($jugador10);
+            $datos['delantero2'] = $this->model->getDelanteros($jugador11);
         //     for ($i = 1; $i <= 11; $i++) {
         //     $jugador = "jugador" . $i;
         //     if (isset($_POST['$jugador'])) {
@@ -38,9 +46,9 @@ class InicioController
         // }
         //var_dump($jugador);
        // $datos['jugadores'] = $jugadores;
-        var_dump($datos['arquero']);
+        //var_dump($datos['arquero']);
+        //var_dump($datos['defensor']);
     }
-       
         $this->render->printView('index', $datos);
         }
         
