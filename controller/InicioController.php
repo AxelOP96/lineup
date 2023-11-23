@@ -47,4 +47,9 @@ class InicioController
         $datos = null;
         $this->render->printView('index', $datos);
     }
+    public function mostrarPantallaReserva()
+    {
+        $datos = null;
+        $this->render->printView('reserva', $datos);
+    }
 }
