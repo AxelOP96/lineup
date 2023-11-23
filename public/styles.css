@@ -124,3 +124,10 @@ span{
   color: #fff;
   font-family: 'Lato', sans-serif;
 }
+.seleccionado{
+  color: #12299c;
+  background-color: rgb(43, 144, 227);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
