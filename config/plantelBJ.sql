@@ -101,3 +101,28 @@ insert INTO jugadores_basquet(nombre, posicion, dorsal) VALUES
 ("Tiziano Prome", "Pivot", 28),
 ("Raven Barber", "Pivot", 35),
 ("Jose Defelippo", "Escolta", 55);
+
+CREATE TABLE guerreras(
+    codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    foto VARCHAR(50) NOT NULL,
+    posicion VARCHAR(10) NOT NULL,
+    dorsal INT(10) NOT NULL
+);
+
+insert INTO guerreras(nombre, posicion, dorsal) VALUES
+("Camila Hiruela", "Receptora", 1),
+("Carolina Polaris", "Central", 2),
+("Maria Nuñez", "Central", 3),
+("Rocio Morales", "Receptora", 4),
+("Tatiana Rizzo", "Libero", 5),
+("Eugenia Nosach", "Receptora", 6),
+("Victoria Zabala", "Central", 7),
+("Greta Martinelli", "Armadora", 8),
+("Dominique Corsaro", "Central", 9),
+("Candela Salinas", "Receptora", 11),
+("Julieta Holzmaisters", "Central", 12),
+("Sabrina Germanier", "Armadora", 13),
+("Sabrina Torino", "Libero", 15),
+("Maria De La Paz Corbalan", "Opuesto", 17),
+("Mariangeles Cossar", "Receptora", 18);
