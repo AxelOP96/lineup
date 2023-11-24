@@ -35,4 +35,20 @@ class InicioModel {
         $query = "SELECT * FROM gladiadoras";
         return $this->database->query( $query );
     }
+    public function getArqueras(){
+        $query = "SELECT * FROM gladiadoras WHERE posicion = 'ARQ'";
+        return $this->database->query( $query );
+    }
+    public function getDefensoras(){
+        $query = "SELECT * FROM gladiadoras WHERE posicion = 'DF'";
+        return $this->database->query( $query );
+    }
+    public function getVolantes(){
+        $query = "SELECT * FROM gladiadoras WHERE posicion = 'MC'";
+        return $this->database->query( $query );
+    }
+    public function getDelanteras(){
+        $query = "SELECT * FROM gladiadoras WHERE posicion = 'DE'";
+        return $this->database->query( $query );
+    }
 }

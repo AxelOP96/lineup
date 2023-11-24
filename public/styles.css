@@ -144,6 +144,7 @@ span{
   border: none;
   border-radius: 10px;
   padding: 10px;
+  text-decoration: none;
 }
 .lista-h{
   display: flex;

@@ -1,0 +1,57 @@
+<div class="header">
+    
+    <a class="boton" href="index.php?controller=Inicio&method=mostrarPantallaInicial">Primera</a>
+    <a class="boton" href="index.php?controller=Inicio&method=mostrarPantallaReserva">Reserva</a>
+    <button  class="seleccionado">Femenino</button>
+    <button class="boton">Voley femenino</button>
+    <button class="boton">Futsal</button>
+    <button class="boton">Voley masculino</button>
+    <button class="boton">Basquet</button>
+    <a href=""></a>
+</div>
+
+<main class="content">
+    <div class="campo">
+        
+        <table>
+            <thead>
+              <tr>
+                <th>Arqueras</th>
+                <th>Defensoras</th>
+                <th>Mediocampistas</th>
+                <th>Delanteras</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="formulario">
+                {{#arqueras}}
+                <td >{{nombre}}</td>
+                {{/arqueras}}
+                {{#defensoras}}
+                <td>{{nombre}}</td>
+                {{/defensoras}}
+                {{#volantes}}
+                <td>{{nombre}}</td>
+                {{/volantes}}
+                {{#delanteras}}
+                <td>{{nombre}}</td>
+                {{/delanteras}}
+            </tr>
+              <!-- <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+              </tr> -->
+              <!-- Puedes agregar más filas según sea necesario -->
+            </tbody>
+          </table>
+          <!-- <h2 class="subtitulo">Lista de jugadores</h2>
+        {{#jugadoras_primera}}
+        <ul class="lista-h">
+            <li class="subtitulo">{{nombre}}</li>
+            <li>Dorsal: {{dorsal}}</li>
+            <li>Posición: {{posicion}}</li>
+        </ul>
+        {{/jugadoras_primera}} -->
+    </div>
+</main>

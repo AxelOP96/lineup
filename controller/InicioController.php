@@ -53,6 +53,10 @@ class InicioController
         $this->render->printView('reserva', $datos);
     }
     public function mostrarPantallaGladiadoras(){
+        $datos['arqueras'] = $this->model->getArqueras();
+        $datos['defensoras'] = $this->model->getDefensoras();
+        $datos['volantes'] = $this->model->getVolantes();
+        $datos['delanteras'] = $this->model->getDelanteras();
         $datos['jugadoras_primera'] = $this->model->getPrimeraFemenino();
         $this->render->printView('gladiadoras', $datos);
     }
