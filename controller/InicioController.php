@@ -60,4 +60,10 @@ class InicioController
         $datos['jugadoras_primera'] = $this->model->getPrimeraFemenino();
         $this->render->printView('gladiadoras', $datos);
     }
+
+    public function mostrarPantallaBasquet()
+    {
+        $datos['jugadores_basquet'] = $this->model->getJugadoresBasquet();
+        $this->render->printView('basquet', $datos);
+    }
 }

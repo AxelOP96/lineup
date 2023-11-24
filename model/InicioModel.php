@@ -51,4 +51,8 @@ class InicioModel {
         $query = "SELECT * FROM gladiadoras WHERE posicion = 'DE'";
         return $this->database->query( $query );
     }
+    public function getJugadoresBasquet(){
+        $query = "SELECT * FROM jugadores_basquet";
+        return $this->database->query( $query );
+    }
 }
