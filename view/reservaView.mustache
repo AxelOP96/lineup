@@ -12,5 +12,13 @@
 
 <main class="content">
     <div class="campo">
+        <h2>Lista de jugadores</h2>
+        {{#jugadores_reserva}}
+        <ul class="lista-h">
+            <li>{{nombre}}</li>
+            <li>{{dorsal}}</li>
+            <li>{{posicion}}</li>
+        </ul>
+        {{/jugadores_reserva}}
     </div>
 </main>

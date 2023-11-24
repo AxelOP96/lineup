@@ -49,7 +49,7 @@ class InicioController
     }
     public function mostrarPantallaReserva()
     {
-        $datos = null;
+        $datos['jugadores_reserva'] = $this->model->getReserva();
         $this->render->printView('reserva', $datos);
     }
 }

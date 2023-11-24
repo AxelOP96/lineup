@@ -27,4 +27,8 @@ class InicioModel {
         $query = "SELECT * FROM jugador WHERE nombre LIKE '%$nombre%'";
         return $this->database->query( $query );
     }
+    public function getReserva(){
+        $query = "SELECT * FROM jugadorReserva";
+        return $this->database->query( $query );
+    }
 }
