@@ -66,4 +66,9 @@ class InicioController
         $datos['jugadores_basquet'] = $this->model->getJugadoresBasquet();
         $this->render->printView('basquet', $datos);
     }
+    public function mostrarPantallaGuerreras()
+    {
+        $datos['jugadoras_guerreras'] = $this->model->getGuerreras();
+        $this->render->printView('guerreras', $datos);
+    }
 }

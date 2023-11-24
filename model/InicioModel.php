@@ -55,4 +55,8 @@ class InicioModel {
         $query = "SELECT * FROM jugadores_basquet";
         return $this->database->query( $query );
     }
+    public function getGuerreras(){
+        $query = "SELECT * FROM guerreras";
+        return $this->database->query( $query );
+    }
 }
