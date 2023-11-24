@@ -78,3 +78,26 @@ insert INTO gladiadoras(nombre, posicion, dorsal) VALUES
 ("Eliana Stabile", "DF", 33),
 ("Camila Gomez Ares", "MC", 88),
 ("Carolina Troncoso", "DE", 77);
+
+CREATE TABLE jugadores_basquet(
+    codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    foto VARCHAR(50) NOT NULL,
+    posicion VARCHAR(10) NOT NULL,
+    dorsal INT(10) NOT NULL
+);
+
+insert INTO jugadores_basquet(nombre, posicion, dorsal) VALUES
+("Leonardo Mainoldi", "Pivot", 4),
+("Juan Martin Guerrero", "Base", 5),
+("Marcos Mata", "Alero", 6),
+("Nicolas Stenta", "Alero", 7),
+("Tomas Sonnaillon", "Escolta", 8),
+("Manuel Rodriguez", "Alero", 10),
+("Jose Vildoza", "Base", 11),
+("Nicolas Burgos", "Pivot", 14),
+("Sebastian Vega", "Pivot", 17),
+("Leonel Schattmann", "Escolta", 20),
+("Tiziano Prome", "Pivot", 28),
+("Raven Barber", "Pivot", 35),
+("Jose Defelippo", "Escolta", 55);
