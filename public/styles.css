@@ -19,6 +19,10 @@
     text-align: center;
     color: blue;
 }
+.subtitulo{
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .titulo .boca, .centrado .boca {
     color: rgb(244, 240, 50); /* Establece el color para "BOCA" */
   }
@@ -140,4 +144,12 @@ span{
   border: none;
   border-radius: 10px;
   padding: 10px;
+}
+.lista-h{
+  display: flex;
+  padding: 10px;
+}
+.lista-h li{
+  margin: 0 20px;
+  list-style-type: none;
 }
