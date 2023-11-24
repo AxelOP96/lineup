@@ -31,4 +31,8 @@ class InicioModel {
         $query = "SELECT * FROM jugadorReserva";
         return $this->database->query( $query );
     }
+    public function getPrimeraFemenino(){
+        $query = "SELECT * FROM gladiadoras";
+        return $this->database->query( $query );
+    }
 }

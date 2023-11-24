@@ -39,4 +39,42 @@ insert INTO jugadorReserva(nombre, posicion, dorsal) VALUES
 ("Nahuel Genez", "DF", 14),
 ("Ramiro Garcia", "ARQ", 38),
 ("Sebastian Diaz Robles", "ARQ", 1),
-("Tomas Diaz", "MC", 15),
+("Tomas Diaz", "MC", 15);
+
+CREATE TABLE gladiadoras(
+    codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    foto VARCHAR(50) NOT NULL,
+    posicion VARCHAR(3) NOT NULL,
+    dorsal INT(10) NOT NULL
+);
+
+insert INTO gladiadoras(nombre, posicion, dorsal) VALUES
+("Laurina Oliveros", "ARQ", 1),
+("Noelia Espindola", "DF", 2),
+("Gabriela Barrios", "DF", 3),
+("Julieta Cruz", "DF", 4),
+("Vanina Preininger", "MC", 5),
+("Cecilia Ghigo", "DF", 6),
+("Amancay Urbani", "MC", 7),
+("Agustina Arias", "DE", 8),
+("Andrea Ojeda", "DE", 9),
+("Melani Moran", "MC", 10),
+("Kishi nuñez", "DE", 11),
+("Priscila Siben", "ARQ", 12),
+("Estefania Palomar", "DE", 13),
+("Brisa Priori", "DE", 14),
+("Camila Baccaro", "DF", 15),
+("Eugenia Flores", "DF", 16),
+("Mariana Gaitan", "DE", 17),
+("Clarisa Huber", "MC", 18),
+("Yohana Masagli", "DF", 19),
+("Celeste Dos Santos", "DF", 20),
+("Raquel Polich", "DE", 21),
+("Ambar ApostÓlico", "ARQ", 22),
+("Miriam Mayorga", "MC", 23),
+("Ana Gómez", "DF", 24),
+("Nazareth Dos Santos", "DF", 25),
+("Eliana Stabile", "DF", 33),
+("Camila Gomez Ares", "MC", 88),
+("Carolina Troncoso", "DE", 77);
