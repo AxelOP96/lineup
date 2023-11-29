@@ -126,3 +126,31 @@ insert INTO guerreras(nombre, posicion, dorsal) VALUES
 ("Sabrina Torino", "Libero", 15),
 ("Maria De La Paz Corbalan", "Opuesto", 17),
 ("Mariangeles Cossar", "Receptora", 18);
+
+CREATE TABLE futsal_masc(
+    codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    foto VARCHAR(50) NOT NULL,
+    posicion VARCHAR(3) NOT NULL,
+    dorsal INT(10) NOT NULL
+);
+
+insert INTO futsal_masc(nombre, posicion, dorsal) VALUES
+("Guido Mosenson", "Arquero", 1),
+("Lucas Acosta", "Arquero", 12),
+("Nelson Barrientos", "Cierre", 2),
+("Juan Pablo Torres", "Ala", 3),
+("Lucas Flores", "Ala", 4),
+("Martin Giménez", "Cierre", 5),
+("Ezequiel Ramirez", "Ala", 7),
+("Santiago Basile", "Cierre", 8),
+("Franco Martinez Rivera", "Ala", 10),
+("Jonatan Carnevale", "Pivot", 11),
+("Rodrigo Álvarez", "Ala", 18),
+("Lautaro Yáñez", "Ala", 19),
+("Lucas Ramirez", "Pivot", 23),
+("Tomas Becco", "Pivot", 26),
+("Anderson Piroco", "Boludo", 84),
+("Ricardo Surubo", "Gordelo", 33),
+("Caique Ludimilo", "Banjo",99),
+("André Cervejo", "Solteiro", 51);
