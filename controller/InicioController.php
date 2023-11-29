@@ -71,4 +71,16 @@ class InicioController
         $datos['jugadoras_guerreras'] = $this->model->getGuerreras();
         $this->render->printView('guerreras', $datos);
     }
+    public function mostrarPantallaFutsal()
+    {
+        $datos = null;
+        //$datos['jugadoras_guerreras'] = $this->model->getGuerreras();
+        $this->render->printView('futsal', $datos);
+    }
+    public function mostrarPantallaVoleyMasc()
+    {
+        $datos = null;
+        //$datos['jugadoras_guerreras'] = $this->model->getGuerreras();
+        $this->render->printView('voleyMasc', $datos);
+    }
 }

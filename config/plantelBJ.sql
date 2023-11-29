@@ -131,7 +131,7 @@ CREATE TABLE futsal_masc(
     codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     foto VARCHAR(50) NOT NULL,
-    posicion VARCHAR(3) NOT NULL,
+    posicion VARCHAR(8) NOT NULL,
     dorsal INT(10) NOT NULL
 );
 
@@ -154,3 +154,32 @@ insert INTO futsal_masc(nombre, posicion, dorsal) VALUES
 ("Ricardo Surubo", "Gordelo", 33),
 ("Caique Ludimilo", "Banjo",99),
 ("André Cervejo", "Solteiro", 51);
+
+CREATE TABLE voley_masc(
+    codigo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    foto VARCHAR(50) NOT NULL,
+    posicion VARCHAR(14) NOT NULL,
+    dorsal INT(10) NOT NULL
+);
+
+insert INTO voley_masc(nombre, posicion, dorsal) VALUES
+("Chazarreta Manuel", "Central", 1),
+("Barisic Tomás", "Armador", 2),
+("Handlarz Teo", "Libero", 4),
+("Hribar Martin", "Punta Receptor", 5),
+("Caraballo Matias Ariel", "Central", 6),
+("Mangini Juan Manuel", "Opuesto", 7),
+("Vivas Lucas", "Punta Receptor", 8),
+("Palumbo Rodrigo", "Central", 9),
+("Rivero Valentino Federico", "Opuesto", 10),
+("Beltrán Emanuel", "Central", 11),
+("Jaime Hector Maximiliano", "Punta Receptor", 12),
+("Gómez Leandro Javier","Libero", 13),
+("Baez Carlos Emanuel", "Punta Receptor", 14),
+("Bauly Bruno", "Opuesto", 17),
+("Molina Marcelo Eduardo", "Armador", 18),
+("Linares Gonzales Gaston", "Punta Receptor", 19),
+("Bruno Ignacio", "Armador", 20),
+("Ocampos Dominguez Lucas", "Central", 21),
+("Garcia Rosel Juan Ignacio", "Central", 22);
